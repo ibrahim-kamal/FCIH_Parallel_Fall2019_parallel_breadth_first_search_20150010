@@ -12,8 +12,8 @@ public class main {
 		Scanner sc = new Scanner(System.in);
 		int numThreads;
 		System.out.print("Enter Parallel Threads number: ");
-        numThreads = sc.nextInt(); 
-        sc.close();
+                numThreads = sc.nextInt(); 
+                sc.close();
         
 		Graph g = new Graph();
 		
@@ -21,7 +21,7 @@ public class main {
 		g.addRoute(1, 2);
 		g.addRoute(1, 4);
 		g.addRoute(3, 1);
-		g.addRoute(2, 1);
+//		g.addRoute(2, 1);
 		g.addRoute(1, 0);
 		
 		printGraph(g);

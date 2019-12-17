@@ -11,7 +11,7 @@ public class BFS_Serial {
 		visited.add(startCity);
 		queue.add(startCity);
 		while(!queue.isEmpty()) {
-			int currentCity = queue.poll();
+			int currentCity = queue.poll(); // return null // pop return exception  + remove from queue
 			System.out.println("Visiting City #" + currentCity);
 			
 			for(int city : g.getCitiyDistenations(currentCity)) {

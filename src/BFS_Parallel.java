@@ -15,13 +15,13 @@ public class BFS_Parallel implements Runnable {
 	}
 	
 	public void run() {
-        int city = cityId;
-        visitNode(city);
-        
-        while (!queue.isEmpty()) {
-            Integer currentCity = queue.poll();
-            for (Integer c : graph.getCitiyDistenations(currentCity)) 
-            	visitNode(c);
+            int city = cityId;
+            visitNode(city);
+
+            while (!queue.isEmpty()) {
+                Integer currentCity = queue.poll();
+                for (Integer c : graph.getCitiyDistenations(currentCity)) 
+                    visitNode(c);
         }
     }
 
